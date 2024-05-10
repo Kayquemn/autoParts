@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <!-- <link href="th.ico" rel="shortcut icon"> -->
+          
+          <link href="estilo.css" rel="stylesheet" >  
+          <title>AutoParts</title>  
+      </head>
+    <body>
+        <header>
+            <div class="Logo_caixa">
+               <img src="NewLogo.png" title="AutoParts" class="logo">
+               
+            </div>
+          </header>
+          <h1 class="Titulo"> Encomendas</h1>
+
+ <!-------------------------------------------------------< PESQUISA NA TABELA > ------------------------------------------------------------>
+          <label for="filtrar-tabela">Filtrar</label>
+          <input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o nome do cliente">
+
+ <!---------------------------------------------------------< TABELA PEDIDOS > ------------------------------------------------------------->
+          <table id="tabela_pedidos">                
+                    <tr>
+                        <th>Nome</th>
+                        <th>Peça de Carro</th>
+                        <th>Quantidade</th>
+                        <th>Valor Unitário</th>
+                        <th>Total</th>
+                    </tr>
+              
+                <tbody>
+                    <tr class="item">
+                        <td class="nome">Junior</td>
+                        <td class="peca">Pastilha de Freio</td>
+                        <td class="quantidade">2</td>
+                        <td class="preco-unitario">10</td>
+                        <td class="preco-total"></td>
+                    </tr>
+
+                    <tr class="item">
+                        <td class="nome">Pedro</td>
+                        
+                        <td class="peca">Amortecedor Dianteiro</td>
+                        <td class="quantidade">4</td>
+                        <td class="preco-unitario">20</td>
+                        <td class="preco-total"></td>
+                    </tr>
+                    <tr class="item">
+                        <td class="nome">Lucas</td>
+                        <td class="peca">Vela de Ignição</td>
+                        <td class="quantidade">4</td>
+                        <td class="preco-unitario">20</td>
+                        <td class="preco-total"></td>
+                    </tr>
+                    <tr class="item">
+                        <td class="nome">João</td>
+                        <td class="peca">Kit de Embreagem</td>
+                        <td class="quantidade">4</td>
+                        <td class="preco-unitario">300</td>
+                        <td class="preco-total"></td>
+                    </tr>
+                    <tr class="item">
+                        <td class="nome">Kayque</td>
+                        <td class="peca">Bateria de Carro</td>
+                        <td class="quantidade">2</td>
+                        <td class="preco-unitario">22</td>
+                        <td class="preco-total"></td>
+                    </tr>
+                    <tr class="item">
+                        <td class="nome">Paula</td>
+                        <td class="peca">Filtro de Ar</td>
+                        <td class="quantidade">5</td>
+                        <td class="preco-unitario">15</td>
+                        <td class="preco-total"></td>
+                    </tr>
+
+ <!---------------------------------------------------------< NOVAS ENCOMENDAS > ------------------------------------------------------------->
+                </tbody>
+            </table>
+            <h1 class="Titulo2">Adicionar novas encomendas</h1>
+            <form id="product-form">
+                <div class="form-group">
+                  <label for="name">Nome do Produto:</label>
+                  <input type="text" id="nome" name="name" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="quantity">Quantidade:</label>
+                  <input type="text" id="quanti"  required>
+                </div>
+
+                <div class="form-group">
+                  <label for="product">Produto:</label>
+                  <input type="text" id="product"  required>
+                </div>
+
+                <div class="form-group">
+                  <label for="unit-price">Valor Unitário:</label>
+                  <input type="text" id="Valor_unit"  required>
+                </div>
+                
+                <button id="Adicionar" class="button" type="submit">Salvar</button>
+              </form>
+            
+            <script src="JS.js"></script>
+            <script src="Tabela.js"></script>
+            <script src="filtrar.js"></script>
+
+    <body>     
+</html>

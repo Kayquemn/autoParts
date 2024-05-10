@@ -1,0 +1,130 @@
+body {
+  font-family: "Arial";
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+header {
+  background-color: #000000
+}
+
+nav {
+  position: absolute;
+  right: 0;
+  top: 70px;
+
+}
+
+nav li {
+  display: inline;
+  margin: 0 0 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  color: red;
+  text-decoration: underline;
+
+}
+
+Logo_caixa {
+  position: relative;
+  width: 940px;
+  margin: auto;
+}
+
+.logo {
+  width: 20%;
+}
+
+.Titulo {
+  text-align: center;
+}
+/*------------------------------------------------------------<TABELA PEDIDOS > -----------------------------------------------------------*/
+#filtrar-tabela{
+  width: 19.5%;
+  height: 35px;
+  margin-bottom: 10px;
+}
+/*-----------------------------------------------<COMPARANDO A BUSCA COM O ITEM DA TABELA>------------------------------------------------------------------------*/
+.invisivel{
+  display: none;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+table {
+  width: 95%;
+  border-collapse: collapse;
+  border: 2px solid rgb(222, 119, 2);
+  font-family: Arial, sans-serif;
+  margin: auto;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #f2f2f2;
+}
+
+tbody td:first-child,
+thead th:first-child {
+  border-left: 1px solid #ddd;
+  /* Linha separando a primeira coluna */
+}
+
+.Titulo2 {
+  text-align: center;
+}
+
+.info-invalida {
+  background-color: rgb(184, 0, 0);
+}
+
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  border-radius: 2px;
+  padding: 6px;
+}
+
+input[type="text"] {
+  width: calc(50% - 12px);
+  padding: 4px;
+  border-radius: 2px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-left: -1px;
+  background-color: #45a049;
+}
+
+
+.fadeOut {
+  opacity: 0;
+  transition: 1s;
+}
